@@ -18,31 +18,31 @@ Ubuntu 12+
 
 下载:
 ```
-git https://github.com/isleifeng/ss-fly
+git https://github.com/isleifeng/shadowsocks
 ```
 安装
 ```
-ss-fly/ss-fly.sh -i password port
+shadowsocks/ssr.sh -i password port
 ```
 password 连接密码
 port 连接端口
 
 ## 命令
 ```
-启动：/etc/init.d/ss-fly start
-停止：/etc/init.d/ss-fly stop
-重启：/etc/init.d/ss-fly restart
-状态：/etc/init.d/ss-fly status
-查看ss链接：ss-fly/ss-fly.sh -sslink
+启动：/etc/init.d/ssr start
+停止：/etc/init.d/ssr stop
+重启：/etc/init.d/ssr restart
+状态：/etc/init.d/ssr status
+查看ss链接：shadowsocks/ssr.sh -sslink
 修改配置文件：vim /etc/shadowsocks.json
-卸载: ss-fly/ss-fly.sh -uninstall
+卸载: shadowsocks/ssr.sh -uninstall
 ```
 
 
 ## 开启bbr加速
 
 ```
-ss-fly/ss-fly.sh -bbr
+ssr/shadowsocks.sh -bbr
 ```
 
 装完后需要重启系统，输入y即可立即重启，或者之后输入reboot命令重启。
